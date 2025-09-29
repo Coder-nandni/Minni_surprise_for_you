@@ -370,8 +370,8 @@
                 
                 const angle = (i * 18) * Math.PI / 180;
                 const velocity = Math.random() * 100 + 50;
-                const dx = Math.cos(angle) * velocity;
-                const dy = Math.sin(angle) * velocity;
+                const dx = Math.cos(angle) * horisently;
+                const dy = Math.sin(angle) * horisently;
                 
                 particle.style.transform = `translate(${dx}px, ${dy}px)`;
                 firework.appendChild(particle);
@@ -488,3 +488,4 @@ document.body.addEventListener("touchstart", startMusic, { once: true });
 </body>
 
 </html>
+
